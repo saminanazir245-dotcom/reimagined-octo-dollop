@@ -19,7 +19,7 @@ def init_gemini():
         st.error("Please set GEMINI_API_KEY in your Streamlit Secrets or Environment Variables.")
         st.stop()
     genai.configure(api_key=api_key)
- import google.generativeai as genai
+import google.generativeai as genai
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
