@@ -19,7 +19,7 @@ def init_gemini():
         st.error("Please set GEMINI_API_KEY in your Streamlit Secrets or Environment Variables.")
         st.stop()
     genai.configure(api_key=api_key)
-    return genai.GenerativeModel('gemini-1.5-flash-latest')
+    return genai.GenerativeModel('gemini-1.5-pro')
 
 model = init_gemini()
 
